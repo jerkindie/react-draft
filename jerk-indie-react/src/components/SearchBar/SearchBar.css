@@ -1,0 +1,30 @@
+.input-margin {
+  margin: 20px 10px 10px 0;
+}
+
+.ant-input:focus {
+    border-color: #666666;
+}
+
+.ant-input:hover {
+    border-color: #666666!important;
+    border-right-width: 1px !important;
+}
+
+.ant-select-selection:hover {
+    border-color: #666666!important;
+    border-right-width: 1px !important;
+}
+
+.ant-select-dropdown-menu-item:hover {
+    background-color: #f5f5f5;
+}
+
+.ant-select-focused .ant-select-selection, .ant-select-selection:focus, .ant-select-selection:active {
+    border-color: #666666!important;
+}
+
+.ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled) {
+    border-color: #666666!important;
+
+}
