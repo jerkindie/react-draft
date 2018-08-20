@@ -1,0 +1,24 @@
+.search-input {
+    margin-right: 10px;
+    z-index: 1;
+}
+
+.autocomplete-dropdown-container {
+  text-align: left;
+  border: 1px solid #eee;
+  margin-top: 10px;
+  position: absolute;
+  background-color: #fff;
+}
+
+.suggestion-item, .suggestion-item--active {
+  padding: 0 10px;
+}
+
+.suggestion-item:first-child, .suggestion-item--active:first-child {
+  margin-top: 10px;
+}
+
+.suggestion-item:last-child, .suggestion-item--active:last-child {
+  margin-bottom: 10px;
+}
