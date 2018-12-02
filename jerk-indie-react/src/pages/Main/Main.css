@@ -4,11 +4,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 img.main-logo {
-    width: 300px;
+    width: 140px;
 }
 
 .card-table {
@@ -17,4 +17,9 @@ img.main-logo {
 
 thead {
   border-bottom: 1px solid #f5f5f5;
+}
+
+.main-container {
+  margin-left: 140px;
+  padding: 20px;
 }

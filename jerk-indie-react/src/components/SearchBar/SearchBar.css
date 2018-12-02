@@ -10,6 +10,7 @@
 
 .ant-input:focus {
     border-color: #666666;
+    box-shadow: none;
 }
 
 .ant-input:hover {
@@ -22,15 +23,28 @@
     border-right-width: 1px !important;
 }
 
+.ant-select-dropdown-menu-item-active {
+  background-color: #f5f5f5;
+}
+
 .ant-select-dropdown-menu-item:hover {
     background-color: #f5f5f5;
 }
 
 .ant-select-focused .ant-select-selection, .ant-select-selection:focus, .ant-select-selection:active {
     border-color: #666666!important;
+    box-shadow: none;
 }
 
 .ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled) {
     border-color: #666666!important;
 
+}
+
+
+.ant-select-open .ant-select-selection {
+    border-color: #666666!important;
+    outline: 0;
+    box-shadow: none;
+    border-right-width: 1px !important;
 }

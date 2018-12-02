@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import 'bulma/css/bulma.css';
-import logo from '../../images/logo.png';
 import { SearchBar } from "../../components/SearchBar";
 import { EventCard } from "../../components/EventCard";
 import './Main.css';
@@ -16,10 +15,8 @@ class Main extends Component {
   render() {
     return (
       <div className="Main">
-        <div className="container">
-          <div className="logo-container">
-            <img className="main-logo" src={logo} />
-          </div>
+
+        <div className="container main-container">
           <SearchBar />
           <div className="card-container">
             <table className="card-table">
