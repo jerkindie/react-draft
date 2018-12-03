@@ -1,11 +1,11 @@
 .SearchBar {
     display: flex;
     align-items: center;
-    margin: 20px 0 10px 0;
+    margin: 20px 0 0 0;
 }
 
-.distance-select {
-  margin-right: 10px;
+.distance-select, .genre-select {
+  width: 100%;
 }
 
 .ant-input:focus {
@@ -47,4 +47,10 @@
     outline: 0;
     box-shadow: none;
     border-right-width: 1px !important;
+}
+
+@media only screen and (max-width: 769px) {
+  .search-form {
+    width: 100%;
+  }
 }

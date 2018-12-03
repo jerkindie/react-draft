@@ -26,24 +26,30 @@ export class SearchBar extends Component {
   render() {
     return (
       <div className="SearchBar">
-        <GooglePlaces/>
-
-        <Select className="distance-select" defaultValue="10" style={{ width: 120 }} onChange={handleChange}>
-          <Option value="10">10 Miles</Option>
-          <Option value="20">20 Miles</Option>
-          <Option value="30">30 Miles</Option>
-          <Option value="40">40 Miles</Option>
-        </Select>
-
-        <Select defaultValue="All Genres" style={{ width: 120 }} onChange={handleChange}>
-          <Option value="All Genres">All Genres</Option>
-          <Option value="Rock">Rock</Option>
-          <Option value="Pop">Pop</Option>
-          <Option value="Indie">Indie</Option>
-          <Option value="Hip Hop">Hip Hop</Option>
-          <Option value="Punk">Punk</Option>
-          <Option value="Metal">Metal</Option>
-        </Select>
+        <div className="columns search-form">
+          <div className="column is-two-thirds">
+            <GooglePlaces/>
+          </div>
+          <div className="column">
+            <Select className="distance-select" defaultValue="10" onChange={handleChange}>
+              <Option value="10">10 Miles</Option>
+              <Option value="20">20 Miles</Option>
+              <Option value="30">30 Miles</Option>
+              <Option value="40">40 Miles</Option>
+            </Select>
+          </div>
+          <div className="column">
+            <Select className="genre-select" defaultValue="All Genres" onChange={handleChange}>
+              <Option value="All Genres">All Genres</Option>
+              <Option value="Rock">Rock</Option>
+              <Option value="Pop">Pop</Option>
+              <Option value="Indie">Indie</Option>
+              <Option value="Hip Hop">Hip Hop</Option>
+              <Option value="Punk">Punk</Option>
+              <Option value="Metal">Metal</Option>
+            </Select>
+          </div>
+        </div>
 
       </div>
     );

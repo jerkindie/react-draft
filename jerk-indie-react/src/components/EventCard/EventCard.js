@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Tag } from 'antd';
+import React, {Component} from "react";
+import {Tag} from 'antd';
 import 'antd/dist/antd.css';
 import 'bulma/css/bulma.css';
 
@@ -16,33 +16,46 @@ function preventDefault(e) {
 
 export class EventCard extends Component {
   // Setting our component's initial state
-  state = {
-  };
-
-
-
+  state = {};
 
   render() {
     return (
-
       <tr className="event-card">
-        <td>
-          <p>Aug 15</p>
-        </td>
-        <td>
-          <p>7pm</p>
-        </td>
-        <td>
-          <p>Betty Rage, Scattered Fall, Thought Riot</p>
-        </td>
-        <td>
-          <p>Seifert Center</p>
-        </td>
-        <td>
-          <Tag>Punk</Tag>
-        </td>
-      </tr>
+      <td>
+        <div className="card-div">
+          <div className="columns">
+            <div className="column is-1 main-date">
+              <p className="month">Dec</p>
+              <p className="day">12</p>
+            </div>
+            <div className="column">
+              <div className="columns">
+                <div className="column bands">
+                  <p>Betty Rage, Scattered Fall, Thought Riot</p>
+                </div>
+              </div>
+              <div className="columns">
+                <div className="column date">
+                  <p>Friday, December 12 7:00 pm</p>
+                </div>
+              </div>
+              <div className="columns">
+                <div className="column venue">
+                  <p>Seifert Center - 128 W Benjamin Holt Dr, Stockton, CA</p>
+                </div>
+              </div>
+              <div className="columns">
+                <div className="column genre">
+                  <Tag>Punk</Tag>
+                  <Tag>Hardcore</Tag>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    );
+        </div>
+      </td>
+    </tr>
+  );
   }
 }

@@ -17,19 +17,12 @@ class Main extends Component {
       <div className="Main">
 
         <div className="container main-container">
+
           <SearchBar />
+
           <div className="card-container">
             <table className="card-table">
-              <thead>
-                <tr>
-                  <th>Date</th>
-                  <th>Time</th>
-                  <th>Bands</th>
-                  <th>Location</th>
-                  <th>Genres</th>
 
-                </tr>
-              </thead>
 
               <EventCard />
               <EventCard />
